@@ -52,7 +52,7 @@ fun Work(){
             SubheadlineTextStyle.toModifier().margin(top = 20.px).toAttrs()
         ) {
             SpanText(
-                text = "Here is an application I created.",
+                text = "Here are some applications I created.",
                 modifier = SectionDescriptionStyle.toModifier()
                     .textAlign(TextAlign.Center)
                     .color(
