@@ -36,7 +36,7 @@ import org.tech.portfolio.components.widgets.IconButton
 import org.tech.portfolio.toSitePalette
 
 val NavHeaderStyle = CssStyle.base {
-    Modifier.fillMaxWidth().padding(1.cssRem)
+    Modifier.fillMaxWidth()
 }
 
 @Composable
@@ -46,8 +46,8 @@ private fun NavLink(path: String, text: String) {
 
 @Composable
 private fun MenuItems() {
-    NavLink("/", "Home")
-    NavLink("/about", "About")
+//    NavLink("/", "Home")
+    Link("https://qiita.com/so-ta-01", "Qiita")
 }
 
 @Composable
@@ -102,7 +102,7 @@ fun NavHeader() {
     Row(NavHeaderStyle.toModifier(), verticalAlignment = Alignment.CenterVertically) {
         Link("https://kobweb.varabyte.com") {
             // Block display overrides inline display of the <img> tag, so it calculates centering better
-            Image("/kobweb-logo.png", "Kobweb Logo", Modifier.height(2.cssRem).display(DisplayStyle.Block))
+            Image("/sotafolio-logo.png", "Kobweb Logo", Modifier.height(2.cssRem).display(DisplayStyle.Block))
         }
 
         Spacer()
