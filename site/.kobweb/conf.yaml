@@ -1,5 +1,7 @@
 site:
   title: "Portfolio"
+  export: # このセクションを追加
+    rootPath: "kobfolio" # GitHubリポジトリ名と同じにする
 
 server:
   files:
